@@ -10,6 +10,7 @@ function createHome() {
 
     const michelinImage = new Image();
     michelinImage.src = star;
+    michelinImage.classList.add("michelin");
     
     description.appendChild(createParagraph("From Italy, the best food that exists"));
     description.appendChild(createParagraph("Made by quality chefs all around the world"));

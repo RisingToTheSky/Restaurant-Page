@@ -1,2 +1,7 @@
-alert("This works!!!!!!!");
-console.log("Hi");
+import loadHome from './home.js';
+
+function initialPageLoad() {
+    loadHome;
+}
+
+initialPageLoad();

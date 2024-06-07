@@ -4,20 +4,21 @@ import loadContact from './contact.js';
 import './style.css';
 
 function initialPageLoad() {
-    loadHome;
+    loadHome();
 }
 
 const buttons = document.querySelectorAll("button");
+const content = document.getElementById("content");
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        content.innerHtml = "";
-        if (button.textContent === "Home") {
-            loadHome;
-        } else if (button.textContent === "Menu") {
-            loadMenu;
-        } else if (button.textContent === "Contact") {
-            loadContact;
+        content.textContent = "";
+        if (button.classList.contains("homeButton")) {
+            loadHome();
+        } else if (button.classList.contains("menuButton")) {
+            loadMenu();
+        } else if (button.classList.contains("contactButton")) {
+            loadContact();
         }
     })
 })

@@ -5,13 +5,14 @@ function createContact() {
     contact.classList.add("contact");
 
     const contactInfo = document.createElement("div");
-    contactInfo.classList.add("contactList");
+    contactInfo.classList.add("contactInfo");
     contact.appendChild(contactInfo);
 
     const locationImage = new Image();
     locationImage.src = location;
     locationImage.classList.add("location");
 
+    contact.appendChild(createParagraph("Come to our restaurant!"));
     contactInfo.appendChild(locationImage);
     contactInfo.appendChild(createParagraph("Address: Via Cipro, 21"));
     contactInfo.appendChild(createParagraph("City: Rome"));
@@ -33,4 +34,4 @@ function loadContact() {
     return content;
 }
 
-export default loadContact();
+export default loadContact;

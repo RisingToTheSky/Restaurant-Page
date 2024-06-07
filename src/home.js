@@ -32,5 +32,5 @@ function loadHome() {
     return content;
 }
 
-export default loadHome();
+export default loadHome;
 
